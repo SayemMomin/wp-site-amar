@@ -1,0 +1,27 @@
+[12-Apr-2021 18:26:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function update_meta() on null in C:\Users\USER\Local Sites\amarsite\app\public\wp-content\plugins\elementor-pro\modules\theme-builder\classes\conditions-manager.php:281
+Stack trace:
+#0 C:\Users\USER\Local Sites\amarsite\app\public\wp-content\plugins\elementor-pro\modules\theme-builder\classes\conditions-manager.php(162): ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager->save_conditions(661, Array)
+#1 [internal function]: ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager->ajax_save_theme_template_conditions(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#2 C:\Users\USER\Local Sites\amarsite\app\public\wp-content\plugins\elementor\core\common\modules\ajax\module.php(171): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#3 C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\class-wp-hook.php(292): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#4 C:\Users\USER\Local Sites\amarsite\app\pub in C:\Users\USER\Local Sites\amarsite\app\public\wp-content\plugins\elementor-pro\modules\theme-builder\classes\conditions-manager.php on line 281
+[16-Apr-2021 12:14:15 UTC] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\Requests\Transport\cURL.php on line 437
+[16-Apr-2021 12:14:15 UTC] PHP Stack trace:
+[16-Apr-2021 12:14:15 UTC] PHP   1. {main}() C:\Users\USER\Local Sites\amarsite\app\public\wp-cron.php:0
+[16-Apr-2021 12:14:15 UTC] PHP   2. do_action_ref_array() C:\Users\USER\Local Sites\amarsite\app\public\wp-cron.php:138
+[16-Apr-2021 12:14:15 UTC] PHP   3. WP_Hook->do_action() C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\plugin.php:551
+[16-Apr-2021 12:14:15 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\class-wp-hook.php:316
+[16-Apr-2021 12:14:15 UTC] PHP   5. do_all_pings() C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\class-wp-hook.php:290
+[16-Apr-2021 12:14:15 UTC] PHP   6. do_action() C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\comment.php:2813
+[16-Apr-2021 12:14:15 UTC] PHP   7. WP_Hook->do_action() C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\plugin.php:484
+[16-Apr-2021 12:14:15 UTC] PHP   8. WP_Hook->apply_filters() C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\class-wp-hook.php:316
+[16-Apr-2021 12:14:15 UTC] PHP   9. do_all_enclosures() C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\class-wp-hook.php:290
+[16-Apr-2021 12:14:15 UTC] PHP  10. do_enclose() C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\comment.php:2856
+[16-Apr-2021 12:14:15 UTC] PHP  11. wp_get_http_headers() C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\functions.php:906
+[16-Apr-2021 12:14:15 UTC] PHP  12. wp_safe_remote_head() C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\functions.php:948
+[16-Apr-2021 12:14:15 UTC] PHP  13. WP_Http->head() C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\http.php:110
+[16-Apr-2021 12:14:15 UTC] PHP  14. WP_Http->request() C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\class-http.php:644
+[16-Apr-2021 12:14:15 UTC] PHP  15. Requests::request() C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\class-http.php:394
+[16-Apr-2021 12:14:15 UTC] PHP  16. Requests_Transport_cURL->request() C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\class-requests.php:381
+[16-Apr-2021 12:14:15 UTC] PHP  17. curl_exec() C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\Requests\Transport\cURL.php:162
+[16-Apr-2021 12:14:15 UTC] PHP  18. Requests_Transport_cURL->stream_headers() C:\Users\USER\Local Sites\amarsite\app\public\wp-includes\Requests\Transport\cURL.php:162
